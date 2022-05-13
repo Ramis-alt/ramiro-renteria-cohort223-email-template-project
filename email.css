@@ -1,6 +1,8 @@
 html,body{
     margin: 0;  /* removes the margin from the html page */
     padding: 0;
+    height: 100%;
+    width: 100%;
     box-sizing: border-box;
     
 }
@@ -9,22 +11,19 @@ html,body{
 
 
 .the-container {
-    border: 1px solid black;
+    
     margin-top: 60px;
     height: 100%;
     width: 100%;
+    padding: 20px;
     background-color: rgb(236, 238, 243);
 
 }
 
 .the-row {
     border: 1px solid black;
-    
 }
 
-.the-col {
-    /* border: 1px solid black; */
-}
 
 .compose-button button {
     max-width: 100%;
@@ -46,7 +45,12 @@ html,body{
 
 .the-col-menu button:hover {
     cursor: pointer;
-    color: rgb(182, 150, 114);
+    background-color: rgb(107, 111, 98);
+}
+
+.the-col-menu {
+    color: darkolivegreen;
+    background-color: dimgray;
 }
 
 .text-edit {
