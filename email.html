@@ -1,129 +1,295 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="email.css">
-    <title>Email Project</title>
-  </head>
-  <body>
-    <!-- Used a navbar from bootstrap -->
-    <nav class="navbar navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="images/YourM-cutout1.png" width="50px">Ramiro Renteria</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="email.css">
+
+  <title>Email Project</title>
+</head>
+
+<body>
+  <!-- Used a navbar from bootstrap -->
+  <nav class="navbar navbar-light fixed-top" style="background-color: rgb(84, 94, 138)">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/YourM-cutout1.png" width="50px">Ramiro Renteria</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="images/YourM-cutout1.png" width="50px"></h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <div class="container-fluid the-container">
-        <div class="row the-row">
-          <div class="col-md-2 col-sm-2 the-col compose-button">
-            <button>Compose</button>
-          </div>
-          <div class="col-md-2 col-sm-2 the-col">
-            <!-- Row 1 Col 2--> Search Bar
-          </div>
-          <div class="col-md-8 col-sm-8 d-flex justify-content-evenly the-col toolbar-icons">
-            <button type="submit"><img src="Icons-for-email/Email.jpeg"></button>
-            <button type="submit"><img src="Icons-for-email/Compose.jpeg"></button>
-            <button type="submit"><img src="Icons-for-email/archive.jpeg"></button>
-            <button type="submit"><img src="Icons-for-email/delete.jpeg"></button>
-            <button type="submit"><img src="Icons-for-email/reply.jpeg"></button>
-            <button type="submit"><img src="Icons-for-email/replyall.jpeg"></button>
-            <button type="submit"><img src="Icons-for-email/forward.jpeg"></button>
-            <button type="submit"><img src="Icons-for-email/attach.jpeg"></button>
-            <button type="submit"><img src="Icons-for-email/settings.jpeg"></button>
-          </div>
-        </div>
-        <div class="row the-row">
-          <div class="col-md-2 col-sm-2 the-col-menu">
-            <button type="submit" class="text-edit">Inbox</button>
-            <button type="submit" class="text-edit">Unread</button>
-            <button type="submit" class="text-edit">Sent</button>
-            <button type="submit" class="text-edit">Drafts</button>
-            <button type="submit" class="text-edit">Junk</button>
-            <button type="submit" class="text-edit">Trash</button>
-            <button type="submit" class="text-edit">Archives</button>
-          </div>
-          <div class="col-md-3 col-sm-3 the-col email-names">
-            <!-- Row 2 Col 2  -->
-            <label for="one"><input id="one" type="checkbox" name="one"> Groupon Goods:</label>
-            <label for="one"><input id="one" type="checkbox" name="one"> Groupon Goods:</label>
-            <label for="one"><input id="one" type="checkbox" name="one"> Groupon Goods:</label>
-            <label for="one"><input id="one" type="checkbox" name="one"> Facebook</label>
-            <label for="one"><input id="one" type="checkbox" name="one"> Facebook</label>
-            <label for="one"><input id="one" type="checkbox" name="one"> Facebook</label>
-            <label for="one"><input id="one" type="checkbox" name="one"> Freecodecamp</label>
-            <label for="one"><input id="one" type="checkbox" name="one"> Freecodecamp</label>
-            <label for="one"><input id="one" type="checkbox" name="one"> Freecodecamp</label>
-            <label for="one"><input id="one" type="checkbox" name="one"> The Patch Invites</label>
-            <label for="one"><input id="one" type="checkbox" name="one"> The Patch Invites</label>
-            <label for="one"><input id="one" type="checkbox" name="one"> The Patch Invites</label>
-            <label for="one"><input id="one" type="checkbox" name="one"> LinkedIn</label>
-            <label for="one"><input id="one" type="checkbox" name="one"> LinkedIn</label>
-            <label for="one"><input id="one" type="checkbox" name="one"> LinkedIn</label>
-
-            
-            
-          </div>
-          <!-- Row 2 Col 3   -->
-          <div class="col-md-6 col-sm-6 the-col">
-            <p>Groupon Goods: info on email</p>
-
-            <hr>
-            <img src="">
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
       </div>
+    </div>
+  </nav>
+  <div class="container-fluid the-container">
+    <div class="row the-row1">
+      <div class="col-md-5 col-xs-2 the-col-mini-menu d-flex justify-content-evenly align-items-center">
+        <!-- Row 1 Col 1-->
+        <div class="container" id="magni" style="padding: 0;">
+          <form action="" id="search-bar" class="search-custom">
+            <input type="text" placeholder="search" name="b">
+            <button type="submit"><img src="images/search-tool.png" width="25"></button>
+          </form>
+        </div>
+
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="29" fill="currentColor"
+            class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z" />
+            <path
+              d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z" />
+          </svg>
+        </button>
+      </div>
+      <div class="col-md-7 col-xs-12 d-flex justify-content-evenly align-items-center the-col toolbar-icons" id="test1">
+        <button type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="29" fill="currentColor" class="bi bi-envelope-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+          </svg>
+        </button>
+        <button type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="29" fill="currentColor" class="bi bi-pencil-square"
+            viewBox="0 0 16 16">
+            <path
+              d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+            <path fill-rule="evenodd"
+              d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+          </svg></button>
+        <button type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="29" fill="currentColor" class="bi bi-archive-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z" />
+          </svg>
+        </button>
+        <button type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="29" fill="currentColor" class="bi bi-trash"
+            viewBox="0 0 16 16">
+            <path
+              d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+            <path fill-rule="evenodd"
+              d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+          </svg>
+        </button>
+        <button type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="29" fill="currentColor" class="bi bi-reply-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M5.921 11.9 1.353 8.62a.719.719 0 0 1 0-1.238L5.921 4.1A.716.716 0 0 1 7 4.719V6c1.5 0 6 0 7 8-2.5-4.5-7-4-7-4v1.281c0 .56-.606.898-1.079.62z" />
+          </svg>
+        </button>
+        <button type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="29" fill="currentColor"
+            class="bi bi-reply-all-fill" viewBox="0 0 16 16">
+            <path
+              d="M8.021 11.9 3.453 8.62a.719.719 0 0 1 0-1.238L8.021 4.1a.716.716 0 0 1 1.079.619V6c1.5 0 6 0 7 8-2.5-4.5-7-4-7-4v1.281c0 .56-.606.898-1.079.62z" />
+            <path
+              d="M5.232 4.293a.5.5 0 0 1-.106.7L1.114 7.945a.5.5 0 0 1-.042.028.147.147 0 0 0 0 .252.503.503 0 0 1 .042.028l4.012 2.954a.5.5 0 1 1-.593.805L.539 9.073a1.147 1.147 0 0 1 0-1.946l3.994-2.94a.5.5 0 0 1 .699.106z" />
+          </svg>
+        </button>
+        <button type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="29" fill="currentColor" class="bi bi-forward-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="m9.77 12.11 4.012-2.953a.647.647 0 0 0 0-1.114L9.771 5.09a.644.644 0 0 0-.971.557V6.65H2v3.9h6.8v1.003c0 .505.545.808.97.557z" />
+          </svg>
+        </button>
+        <button type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="29" fill="currentColor" class="bi bi-paperclip"
+            viewBox="0 0 16 16">
+            <path
+              d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z" />
+          </svg>
+        </button>
+        <button type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="29" fill="currentColor" class="bi bi-gear-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="row the-row">
+      <div class="col-md-2 col-xs-2 the-col-menu">
+        <button type="submit" class="text-edit">Compose</button>
+        <button type="submit" class="text-edit">Inbox</button>
+        <button type="submit" class="text-edit">Unread</button>
+        <button type="submit" class="text-edit">Sent</button>
+        <button type="submit" class="text-edit">Drafts</button>
+        <button type="submit" class="text-edit">Junk</button>
+        <button type="submit" class="text-edit">Trash</button>
+        <button type="submit" class="text-edit">Archives</button>
+      </div>
+      <div class="col-md-3 col-xs-3 the-col email-names">
+        <!-- Row 2 Col 2  -->
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Today</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><label for="one"><input id="one" type="checkbox" name="one"></th>
+              <td><a href="#">Groupon Goods:</a></td>
+            </tr>
+            <tr>
+              <th scope="row"><label for="one"><input id="one" type="checkbox" name="one"></th>
+              <td><a href="#">Groupon Goods:</a></td>
+            </tr>
+            <tr>
+              <th scope="row"><label for="one"><input id="one" type="checkbox" name="one"></th>
+              <td><a href="#">Groupon Goods:</a></td>
+            </tr>
+            <tr>
+              <th scope="row"><label for="one"><input id="one" type="checkbox" name="one"></th>
+              <td><a href="#">Groupon Goods:</a></td>
+            </tr>
+            <tr>
+              <th scope="row"><label for="one"><input id="one" type="checkbox" name="one"></th>
+              <td><a href="#">Groupon Goods:</a></td>
+            </tr>
+            <tr>
+              <th scope="row"><label for="one"><input id="one" type="checkbox" name="one"></th>
+              <td><a href="#">Groupon Goods:</a></td>
+            </tr>
+            <tr>
+              <th scope="row"><label for="one"><input id="one" type="checkbox" name="one"></th>
+              <td><a href="#">Groupon Goods:</a></td>
+            </tr>
+            <tr>
+              <th scope="row"><label for="one"><input id="one" type="checkbox" name="one"></th>
+              <td><a href="#">Groupon Goods:</a></td>
+            </tr>
+            <tr>
+              <th scope="row"><label for="one"><input id="one" type="checkbox" name="one"></th>
+              <td><a href="#">Groupon Goods:</a></td>
+            </tr>
+            <tr>
+              <th scope="row"><label for="one"><input id="one" type="checkbox" name="one"></th>
+              <td><a href="#">Groupon Goods:</a></td>
+            </tr>
+            <tr>
+              <th scope="row"><label for="one"><input id="one" type="checkbox" name="one"></th>
+              <td><a href="#">Groupon Goods:</a></td>
+            </tr>
+            <tr>
+              <th scope="row"><label for="one"><input id="one" type="checkbox" name="one"></th>
+              <td><a href="#">Groupon Goods:</a></td>
+            </tr>
+            <tr>
+              <th scope="row"><label for="one"><input id="one" type="checkbox" name="one"></th>
+              <td><a href="#">Groupon Goods:</a></td>
+            </tr>
+            <tr>
+              <th scope="row"><label for="one"><input id="one" type="checkbox" name="one"></th>
+              <td><a href="#">Groupon Goods:</a></td>
+            </tr>
+            <tr>
+              <th scope="row"><label for="one"><input id="one" type="checkbox" name="one"></th>
+              <td><a href="#">Groupon Goods:</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Row 2 Col 3   -->
+      <div class="col-md-7 col-xs-6 the-col printer">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Groupon</th>
+              <!--row 1 col 1-->
+              <th>
+                <button type="submit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-printer-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z" />
+                    <path
+                      d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+                  </svg>
+                </button>
+              </th>
+              <th scope="col" class="date">Monday, May 16 3:50 PM</th>
+              <!--row 1 col 2-->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">To:</th>
+              <!--row 2 col 1-->
+              <td>Ramiro Renteria</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <div>
+          <p><b>Today's Deals For You!</b></p>
+        </div>
+
+        <hr>
+        <a href="https://www.groupon.com/" target="_blank"><img src="images/Groupon-email.jpeg" class="img-fluid"></a>
+      </div>
+    </div>
+  </div>
 
 
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>

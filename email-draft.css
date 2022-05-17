@@ -10,16 +10,11 @@ html,body{
 
 
 .the-container {   
-    margin-top: 50px;
+    margin-top: 60px;
     height: 100%;
     width: 100%;
     padding: 20px;
     /* background-color: rgb(236, 238, 243); */
-}
-
-#magni button:hover {
-    cursor: pointer;
-    color:cornflowerblue;
 }
 
 .the-row1 {
@@ -31,7 +26,9 @@ html,body{
     background-color: dimgray;
 }
 
-
+.compose-button {
+    background-color: dimgray;
+}
 
 .compose-button button {
     max-width: 100%;
@@ -41,28 +38,24 @@ html,body{
     outline: none;
 }
 
-
+.compose-button button:hover {
+    cursor: pointer;
+    background-color: rgb(175, 145, 209);
+}
 
 .the-col-mini-menu {
     background-color:dimgray;
-    
 }
 
 .the-col-mini-menu button {
     border-radius: 50%;
     border: 0;
     outline: none;
-    
 }
 
 .the-col-mini-menu button img {
     width: 20px;
-    border-radius: 50%;   
-}
-
-.the-col-mini-menu button:hover {
-    cursor: pointer;
-    color:cornflowerblue;
+    border-radius: 50%;
 }
 
 .the-col-menu button {
@@ -75,16 +68,16 @@ html,body{
 
 .the-col-menu button:hover {
     cursor: pointer;
-    color:cornflowerblue;
+    background-color: rgb(107, 111, 98);
 }
 
 .the-col-menu {
+    color: darkolivegreen;
     background-color: rgb(84, 94, 138);
 }
 
 .text-edit {
     text-decoration: none;
-    font-weight: bold;
 }
 
 
@@ -93,12 +86,6 @@ html,body{
     border: 0;
     outline: none;
 }
-
-.toolbar-icons button:hover {
-    cursor: pointer;
-    color:cornflowerblue;
-}
-
 
 .toolbar-icons button img{
     width: 25px;
@@ -116,32 +103,3 @@ html,body{
 
 }
 
-#search-bar {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
-
-}
-
-
-td a {
-    display: block;
-    text-decoration: none;
-}
-
-.date {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.printer button {
-    border-radius: 50%;
-    border: 0;
-    outline: none;
-}
-
-.printer button:hover {
-    cursor: pointer;
-    color: cornflowerblue;
-}
